@@ -1,0 +1,111 @@
+/* general */
+html {
+    background-color: rgb(49, 49, 49)
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font */
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+/* name */
+header {
+    position: absolute;
+    left: 20%;
+    color: white;
+    font-size: 2.5rem;
+    background-color: rgb(49, 49, 49);
+    padding: 15px 20px;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: left 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    header {
+        top: 10px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        top: 10px;
+        font-size: 1.5rem;
+        
+    }
+}
+
+/* info box */
+#about-me {
+    position: absolute;
+    top: calc(20px + 5rem); 
+    left: 20%; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 20px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+    line-height: 1.5;
+    width: calc(60% - 40px); 
+    min-width: 10%;
+    max-width: 70%; 
+    box-sizing: border-box; 
+    overflow-wrap: break-word; 
+}
+
+@media (max-width: 600px) {
+    #about-me {
+        font-size: clamp(1rem, 2vw, 1rem); 
+        width: clamp(300px, 70%, 450px); 
+        padding: 10px 15px; 
+    }
+}
+
+@media (max-width: 400px) {
+    #about-me {
+        font-size: clamp(0.8rem, 4vw, 0.9rem); 
+        width: clamp(150px, 60%, 300px);
+    }
+}
+
