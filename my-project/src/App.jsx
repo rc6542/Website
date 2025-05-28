@@ -2,15 +2,17 @@ import './App.css'
 import Navbar from './Navbar.jsx'
 
 function App() {
+  
+
   return (
     <div class="flex flex-col h-screen">
       <Navbar />
       
-      <div class='flex flex-col flex-grow bg-gradient-to-r from-purple-950/40 to-purple-1000 p-14'>
-        <h1 class='text-4xl font-medium'>
+      <div class='flex flex-col flex-grow bg-gradient-to-r from-purple-950/40 to-purple-1000 p-14 items-center text-purple-100'>
+        <h1 class='text-5xl font-medium'>
           Hello!
         </h1>
-        <p class='text-2xl pt-10 text-purple-200'>
+        <p class='text-3xl pt-10 text-purple-200 max-w-250'>
           I'm Ryan Chen, currently a CS student. I'm interested in data science, machine learning, software development, and statistics. I have used, in some capacity, <span class='text-[#4584b6]'>Python</span>, 
           <span class='text-[#adbacd]'> C</span>, <span class='text-[#2468bb]'> R</span>, <span class='text-[#ed8b00]'> Java</span>, <span class='text-[#f7e025]'> JavaScript</span>, <span class='text-[#e54c21]'> HTML</span>, 
           <span class='text-[#1572b6]'> CSS</span>, and <span class='text-[#5dbacf]'> React</span>.  
@@ -23,18 +25,18 @@ function App() {
         </button>
         */}
 
-        <h1 class='text-3xl font-medium pt-14 underline'>
+        <h1 class='text-3xl font-medium pt-14 underline text-purple-100'>
           Projects
         </h1>
 
-        <div class='grid grid-cols-2 pt-10 max-w-400 gap-10'>
-          <div class=" rounded-lg p-6 bg-gradient-to-r from-purple-900/40 to-purple-950/40">
+        <div class='flex flex-col pt-10 max-w-250 gap-10'>
+          <div class="rounded-lg p-6 bg-gradient-to-r from-purple-900/40 to-purple-950/40 hover:bg-purple-900/25 transition duration-200 ease-in-out">
             <h2 class='text-2xl font-medium' >
               <a href='type.tigerapps.org' class='underline'> 
                 TigerType 
               </a>
             </h2>
-            <p class='text-lg pt-2 text-purple-200'>
+            <p class='text-xl pt-2 text-purple-200'>
               A typing web app where Princeton students can type snippets to increase their speed, publicly race other students, and host private lobbies with friends. Features WPM tracking, leaderboards, additional statistics, 
               and achievements. Mostly worked on the frontend using React, JavaScript, and HTML/CSS. Additionally worked on a few API endpoints using PostgreSQL, Express.js, and Node.js.
             </p>
@@ -46,6 +48,17 @@ function App() {
             </p>
           </div>
           */}
+
+        </div>
+        
+        <div class='flex flex-col pt-14 max-w-250 w-full'>
+          <h1 className='text-3xl font-medium underline text-purple-100 text-center'>
+            Contact
+          </h1>
+
+          <p className='text-3xl pt-10 text-purple-200 max-w-250'>
+            Feel free to reach out to me on:
+          </p>
 
         </div>
       </div>
